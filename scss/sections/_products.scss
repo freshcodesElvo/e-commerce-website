@@ -1,0 +1,32 @@
+@use'../custom'as*;
+
+.products-container{
+    padding-top: 3em;
+    .row{
+        .products-container-top{
+            justify-content: space-between;
+
+
+            ul{
+                list-style: none;
+                gap: 1em;
+                li
+                {
+                    a{
+                        /* Home */
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        text-decoration:none;
+                        
+                        &:hover{
+                            color: #FF546F;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

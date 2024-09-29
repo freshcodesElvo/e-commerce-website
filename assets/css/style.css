@@ -11904,7 +11904,7 @@ h1 { /* Discover the Best Deals on Your Favorite Products */
 }
 
 .navbar {
-  border-bottom: 1px solid black;
+  border-bottom: 0.6px solid rgb(74, 74, 74);
 }
 .navbar .navbar-brand { /* ShopEase */
   font-family: "Inter";
@@ -12066,6 +12066,28 @@ h1 { /* Discover the Best Deals on Your Favorite Products */
     justify-content: space-between;
     padding-right: 1.1em;
   }
+}
+
+.products-container {
+  padding-top: 3em;
+}
+.products-container .row .products-container-top {
+  justify-content: space-between;
+}
+.products-container .row .products-container-top ul {
+  list-style: none;
+  gap: 1em;
+}
+.products-container .row .products-container-top ul li a {
+  /* Home */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.products-container .row .products-container-top ul li a:hover {
+  color: #FF546F;
 }
 
 /*# sourceMappingURL=style.css.map */
