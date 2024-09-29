@@ -1,0 +1,23 @@
+@use'../custom'as*;
+.hero-btn{/* Button*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2C2C2C;
+    border-radius: 5px;
+    width: 13em;
+    padding: 1em 2em; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 2em;
+
+    @include media-breakpoint-down(md){
+        width: 10em;
+        padding: .8em .5em;
+    }
+}

@@ -1,0 +1,100 @@
+@use '../custom' as*;
+
+.navbar{
+    border-bottom: 1px solid black;
+
+    .navbar-brand{/* ShopEase */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #000000;
+    }
+    .container{
+        .navbar-toggler{
+            ion-icon{
+                color: black;
+                font-size: 1.7em;
+            }
+
+        }
+        .collapse{
+            ul{
+                li{
+                    a{
+                    /* Home */
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: #000000;
+                    }
+
+                }
+            }
+        }
+    }
+ 
+}
+.secondary-nav{
+    padding-top: 1em;
+   .secondary-nav-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .secondary-nav-content-right{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input{     
+            padding-left: 1em;
+            background: #ECE6F0;
+            border-radius: 5px;
+            outline: none;
+            border:0;
+            width: 20em;
+            height: 2.5em;
+
+            @include media-breakpoint-down(sm){
+                width: 13em;
+            }
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            margin-top: 1em;
+            @include media-breakpoint-down(sm){
+                display: none;
+            }
+        
+            li{
+                list-style: none;
+
+                a{
+                    /* Home */
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: #000000;
+                    text-decoration: none;
+                }
+            }
+        }
+       
+    }
+    .nav-icons{
+        display: flex;
+        gap: 1em;
+        ion-icon{
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+    }
+
+   }
+}
