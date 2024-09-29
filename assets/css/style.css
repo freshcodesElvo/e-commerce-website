@@ -11960,7 +11960,7 @@ h1 { /* Discover the Best Deals on Your Favorite Products */
   gap: 1em;
   margin-top: 1em;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .secondary-nav .secondary-nav-content .secondary-nav-content-right ul {
     display: none;
   }
@@ -11976,19 +11976,6 @@ h1 { /* Discover the Best Deals on Your Favorite Products */
   font-size: 1rem;
   color: #000000;
   text-decoration: none;
-  /* Gift cards */
-  width: 75px;
-  height: 19px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 .secondary-nav .secondary-nav-content .nav-icons {
   display: flex;
@@ -11997,6 +11984,43 @@ h1 { /* Discover the Best Deals on Your Favorite Products */
 .secondary-nav .secondary-nav-content .nav-icons ion-icon {
   font-size: 1.4em;
   font-weight: bold;
+}
+
+.featured-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+}
+@media (max-width: 767.98px) {
+  .featured-products {
+    padding-top: 6em;
+  }
+}
+.featured-products .row .featured-products h2 { /* Top Picks Just for You */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  color: #000000;
+}
+.featured-products .row .featured-products p { /* Explore our curated selection of best-selling products */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4A4A4A;
+}
+.featured-products .row .pics img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 767.98px) {
+  .featured-products .row .pics {
+    margin-top: 2em;
+  }
 }
 
 .hero-section {

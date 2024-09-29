@@ -1,0 +1,42 @@
+@use'../custom'as*;
+.featured-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+
+    @include media-breakpoint-down(md){
+        padding-top: 6em;
+        
+    }
+    .row{
+        .featured-products{
+            h2{/* Top Picks Just for You */                
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 70px;
+                color: #000000;
+            }
+            p{/* Explore our curated selection of best-selling products */
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #4A4A4A;
+            }
+        }
+        .pics{
+            img{
+                width: 100%;
+                height: 100%;
+                
+                border-radius: 10px;
+            }
+            @include media-breakpoint-down(md){
+                margin-top: 2em;
+            }
+        }
+    }
+} 
